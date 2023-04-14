@@ -19,10 +19,10 @@
     <!-- Navbar Menu -->
     <nav>
         <!-- <a href="#">Beranda</a> -->
-        <img href="#" class="logo" src="https://i.postimg.cc/mkY8wFTk/remedial-logo.png" />
+        <a href="#home"><img class="logo" src="https://i.postimg.cc/mkY8wFTk/remedial-logo.png" /></a>
         <div class="navMenu">
             <a href="#">Beranda</a>
-            <a href="#">Tentang kami</a>
+            <a href="#about">Tentang kami</a>
             <a href="#">Program</a>
             <a href="#">Seni</a>
             <a href="#">Artikel</a>
@@ -36,16 +36,107 @@
     <!-- Hero Banner -->
     <section class="hero" id="home">
         <main class="content">
-            <h1><span>Remedial.</span>id</h1>
-            <p>Remedial merupakan kegiatan yang akan Serrum lakukan selama 1 tahun di 2019. <br> Kegiatan ini melibatkan
+            <h2>Selamat datang di</h2>
+            <h1>Remedial<span>.</span>id</h1>
+            <p id="description">Remedial merupakan kegiatan yang akan Serrum lakukan selama 1 tahun di 2019. <br>
+                Kegiatan ini melibatkan
                 murid SMA (pilihan) di Jakarta dan sekitarnya yang berfokus pada pola konsumsi informasi dan pengetahuan
                 berdasarkan perkembangan hari ini.
             </p>
-
-            <div class="CTA">
-                <a href="#" class="daftar">Daftar Sekarang</a>
-            </div>
+            <a href="#form-daftar" class="CTA">Daftar Sekarang</a>
         </main>
+    </section>
+
+    <!-- Section About -->
+    <section id="about" class="about">
+        <div class="gambar">
+            <img src="https://i.postimg.cc/MKtxFBFS/image1.png" alt="gambar1" class="gambar1">
+            <img src="https://i.postimg.cc/yYqkH2BT/image2.png" alt="gambar2" class="gambar2">
+        </div>
+        <div class="tentang">
+            <h3>Tentang Kami</h3>
+            <h1>Remedial.id</h1>
+            <p>Remedial merupakan kegiatan yang akan Serrum lakukan selama 1 tahun di 2019. Kegiatan ini melibatkan
+                murid SMA (pilihan) di Jakarta dan sekitarnya yang berfokus pada pola konsumsi informasi dan pengetahuan
+                berdasarkan perkembangan hari ini. Dengan metode saling silang informasi yang menghasilkan pengetahuan
+                dan pendekatan seni dan literasi. </p>
+            <a href="#" class="lengkap">Selengkapnya . .</a>
+        </div>
+    </section>
+
+    <!-- Section Daftar -->
+    <section class="form-daftar" id="form-daftar">
+        <h2>Formulir Pendaftaran</h2>
+        <form class="form">
+            <div class="data">
+                <p>Nama Lengkap<span style="color: red;"> *</span></p>
+                <input type="text" id="name" class="input" placeholder="Masukkan nama Anda">
+            </div>
+            <div class="data">
+                <p>Email<span style="color: red;"> *</span></p>
+                <input type="email" id="email" class="input" placeholder="Masukkan email Anda">
+            </div>
+            <div class="data">
+                <p>Alamat Rumah<span style="color: red;"> *</span></p>
+                <input type="text" id="city" class="input" placeholder="Masukkan alamat rumah Anda">
+            </div>
+            <div class="data">
+                <p>NISN<span style="color: red;"> *</span></p>
+                <input type="number" id="zip-code" class="input" placeholder="Masukkan NISN Anda">
+            </div>
+            <div class="data">
+                <input type="checkbox" name="status" id="status">
+                <label id="check" for="status">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan
+                    telah
+                    sesuai</label>
+            </div>
+
+            <div class="warning">
+
+            </div>
+
+            <button id="submit-form" type="submit">Submit</button>
+        </form>
+
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="tentang">
+                <img src="https://i.postimg.cc/mkY8wFTk/remedial-logo.png" alt="logo">
+                <p>Remedial merupakan kegiatan yang akan Serrum lakukan selama 1 tahun di 2019. Kegiatan ini melibatkan
+                    murid SMA (pilihan) di Jakarta dan sekitarnya yang berfokus pada pola konsumsi informasi dan
+                    pengetahuan
+                    berdasarkan perkembangan hari ini. Dengan metode saling silang informasi yang menghasilkan
+                    pengetahuan
+                    dan pendekatan seni dan literasi.</p>
+            </div>
+
+            <div class="contact">
+                <h4>Contact Us</h4>
+                <a href="#"><i data-feather="map-pin"></i> Jl. Merdeka Raya No.19 jakarta Timur 13410, Indonesia</a>
+                <a href="#"><i data-feather="mail"></i> remedialserrum@gmail.com</a>
+                <a href="#"><i data-feather="phone"></i> 081387448515 (Remedial Serrum)</a>
+            </div>
+
+            <div class="social">
+                <a href="#"><i data-feather="facebook"></i></a>
+                <a href="#"><i data-feather="twitter"></i></a>
+                <a href="#"><i data-feather="youtube"></i></a>
+                <a href="#"><i data-feather="linkedin"></i></a>
+                <a href="#"><i data-feather="instagram"></i></a>
+                <a href="https://skilvul.com" id="link">Skilvul</a>
+            </div>
+        </div>
+
+        <div class="credit">
+            <p> Created by <a href="#">remedial.id</a> | &copy; 2023 All Rights Reserved</p>
+        </div>
+
+    </footer>
+
     </section>
 
     <script>

@@ -4,6 +4,10 @@
   --bg: #333333;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -36,6 +40,7 @@ nav {
 
 .logo {
   width: 180px;
+  cursor: pointer;
 }
 
 nav .navMenu {
@@ -84,11 +89,12 @@ nav .nav-search a:hover {
   display: block;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 25%;
+  bottom: 0;
   background: linear-gradient(
     0deg,
-    rgb(255, 255, 255) 3%,
-    rgba(225, 225, 225, 0) 15%
+    rgb(255, 255, 255) 10%,
+    rgba(225, 225, 225, 0) 90%
   );
 }
 
@@ -104,8 +110,9 @@ main {
 
 main h1 {
   font-weight: 600;
-  font-size: 30pt;
-  padding: 20px 0;
+  font-size: 20pt;
+  font-size: 4rem;
+  padding: 30px 0;
 }
 
 main h1 span {
@@ -113,10 +120,177 @@ main h1 span {
 }
 
 main .CTA {
-  width: 200px;
-  height: 40px;
-  background-color: aqua;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background-color: #d05d5d;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.about {
+  min-height: 100vh;
+  padding: 5rem 7% 1.4rem;
+  color: black;
   display: flex;
+  background-color: rgb(255, 255, 255);
+}
+
+.about .gambar {
+  /* background-color: aqua; */
+  display: flex;
+  margin: 30px;
+}
+
+.about .tentang {
+  width: 800px;
+  /* background-color: darkslategray; */
+  /* display: grid; */
+  margin: 60px 50px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.about .gambar .gambar2 {
+  width: 150px;
+  height: 300px;
+}
+
+.about .tentang h3 {
+  padding: 20px 0;
+  /* background-color: aqua; */
+}
+
+.about .tentang h1 {
+  padding-bottom: 20px;
+  font-size: 28pt;
+  /* background-color: aqua; */
+}
+
+.about .tentang .lengkap {
+  margin-top: 0.5rem;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #d05d5d;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.form-daftar {
+  min-height: 100vh;
+  padding: 5rem 7% 1.4rem;
+  width: 100%;
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+form {
+  width: 700px;
+  padding: 30px;
   align-self: center;
+  color: black;
+  /* background-color: aquamarine; */
+}
+
+.form-daftar h2 {
+  color: black;
+  padding-top: 20px;
+
+  align-self: center;
+}
+
+.form-daftar .form .data {
+  width: 100%;
+  padding-bottom: 10px;
+  line-height: 30px;
+  /* height: 70vh; */
+  /* background-color: #d05d5d; */
+}
+
+.form-daftar .form .data .input {
+  width: 100%;
+  height: 30px;
+  text-indent: 10px;
+  border: 1px solid black;
+}
+
+label {
+  font-size: 10pt;
+}
+
+button {
+  width: 150px;
+  height: 30px;
+  align-self: center;
+  border-radius: 5px;
+  background-color: #d05d5d;
+  cursor: pointer;
+  font-size: 14pt;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+footer {
+  display: flexbox;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .tentang {
+  width: 450px;
+  height: 200px;
+  margin: 30px;
+  text-align: left;
+  /* background-color: beige; */
+}
+
+.footer .contact {
+  width: 500px;
+  height: 200px;
+  display: grid;
+  margin: 30px;
+  text-align: left;
+  /* background-color: aquamarine; */
+}
+
+.footer .contact a {
+  color: #ffffff;
+}
+
+.footer .social {
+  width: 50px;
+  height: 100px;
+  margin: 30px;
   justify-content: center;
+  display: flexbox;
+  line-height: 30px;
+}
+
+.footer .social a:hover {
+  color: black;
+}
+
+.footer .social a {
+  padding: 30px;
+  color: #ffffff;
+}
+
+footer .credit {
+  padding: 20px;
+  width: 100%;
+  border-top: 1px solid white;
+}
+
+footer .credit a {
+  color: #ffffff;
 }
