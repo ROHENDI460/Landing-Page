@@ -1,0 +1,122 @@
+/* Tambahkan kode CSS kalian di file ini */
+:root {
+  --primary: #ffffff;
+  --bg: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--bg);
+  color: #ffffff;
+  /* min-height: 2000px; */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 7%;
+  background-color: var(--bg);
+  border-bottom: 1px solid rgb(9, 8, 8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.logo {
+  width: 180px;
+}
+
+nav .navMenu {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgb(32, 53, 71); */
+}
+
+nav .navMenu a {
+  color: rgb(130, 130, 130);
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.1rem;
+}
+
+nav .navMenu a:hover {
+  color: #ffffff;
+  font-size: 1.2rem;
+  border-bottom: 1px solid white;
+}
+
+nav .nav-search a {
+  color: rgb(130, 130, 130);
+}
+
+nav .nav-search a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(https://i.postimg.cc/dQSh2Syc/hero-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgb(255, 255, 255) 3%,
+    rgba(225, 225, 225, 0) 15%
+  );
+}
+
+main {
+  width: 50vw;
+  height: 30vh;
+  margin: 50px;
+  display: flexbox;
+  line-height: 30px;
+  justify-content: space-between;
+  /* background-color: aqua; */
+}
+
+main h1 {
+  font-weight: 600;
+  font-size: 30pt;
+  padding: 20px 0;
+}
+
+main h1 span {
+  color: rgb(30, 30, 30);
+}
+
+main .CTA {
+  width: 200px;
+  height: 40px;
+  background-color: aqua;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
