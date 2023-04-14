@@ -153,6 +153,11 @@ main .CTA {
   text-align: justify;
 }
 
+.about .gambar .gambar1 {
+  width: 350px;
+  height: 500px;
+}
+
 .about .gambar .gambar2 {
   width: 150px;
   height: 300px;
@@ -194,6 +199,8 @@ form {
   width: 700px;
   padding: 30px;
   align-self: center;
+  /* display:; */
+  justify-content: center;
   color: black;
   /* background-color: aquamarine; */
 }
@@ -201,21 +208,21 @@ form {
 .form-daftar h2 {
   color: black;
   padding-top: 20px;
-
   align-self: center;
 }
 
-.form-daftar .form .data {
+/* .form-daftar .form .data {
   width: 100%;
   padding-bottom: 10px;
   line-height: 30px;
-  /* height: 70vh; */
-  /* background-color: #d05d5d; */
-}
+  height: 70vh;
+  background-color: #d05d5d;
+} */
 
-.form-daftar .form .data .input {
+.form-daftar .form .input {
   width: 100%;
   height: 30px;
+  margin: 10px 0;
   text-indent: 10px;
   border: 1px solid black;
 }
@@ -227,13 +234,14 @@ label {
 button {
   width: 150px;
   height: 30px;
-  align-self: center;
+  margin-top: 20px;
   border-radius: 5px;
   background-color: #d05d5d;
   cursor: pointer;
   font-size: 14pt;
   font-weight: 700;
   color: #ffffff;
+  margin-left: 35%;
 }
 
 footer {

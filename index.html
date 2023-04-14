@@ -68,36 +68,16 @@
     <section class="form-daftar" id="form-daftar">
         <h2>Formulir Pendaftaran</h2>
         <form class="form">
-            <div class="data">
-                <p>Nama Lengkap<span style="color: red;"> *</span></p>
-                <input type="text" id="name" class="input" placeholder="Masukkan nama Anda">
-            </div>
-            <div class="data">
-                <p>Email<span style="color: red;"> *</span></p>
-                <input type="email" id="email" class="input" placeholder="Masukkan email Anda">
-            </div>
-            <div class="data">
-                <p>Alamat Rumah<span style="color: red;"> *</span></p>
-                <input type="text" id="city" class="input" placeholder="Masukkan alamat rumah Anda">
-            </div>
-            <div class="data">
-                <p>NISN<span style="color: red;"> *</span></p>
-                <input type="number" id="zip-code" class="input" placeholder="Masukkan NISN Anda">
-            </div>
-            <div class="data">
-                <input type="checkbox" name="status" id="status">
-                <label id="check" for="status">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan
-                    telah
-                    sesuai</label>
-            </div>
-
-            <div class="warning">
-
-            </div>
-
+            <input id="name" type="text" class="input" placeholder="Masukkan nama lengkap Anda" />
+            <input id="city" type="text" class="input" placeholder="Masukkan alamat rumah Anda" />
+            <input id="email" type="email" class="input" placeholder="Masukkan alamat email Anda" />
+            <input id="zip-code" type="number" class="input" placeholder="Masukkan NISN Anda" />
+            <input id="status" type="checkbox" />
+            <label id="check">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah
+                sesuai</label>
             <button id="submit-form" type="submit">Submit</button>
+            <div id="warning"></div>
         </form>
-
 
     </section>
 
